@@ -1,0 +1,124 @@
+/* Main container */
+.table-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #333;
+    /* Dark background for the table container */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+    color: #fff;
+    /* Text color to contrast with the dark background */
+}
+
+/* Title styling */
+h1.app-title {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bbb;
+    /* Light gray for subtitle text */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #444;
+    /* Dark gray for the header */
+}
+
+thead th {
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    /* White text for table headers */
+    text-transform: uppercase;
+    /* Makes the header text all uppercase */
+}
+
+tbody td {
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #ddd;
+    /* Light gray text for table data */
+    border-top: 1px solid #555;
+    /* Slight border between rows */
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #444;
+    /* Slightly lighter for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #555;
+    /* Slightly darker for odd rows */
+}
+
+/* Edit button styling */
+button {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+/* Input field styling for editing */
+input {
+    background-color: #222;
+    /* Dark background for inputs */
+    color: #ddd;
+    /* Light text color */
+    border: 1px solid #444;
+    padding: 6px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #888;
+    /* Slight border highlight when focused */
+}
+
+/* Error message styles */
+.error-message {
+    color: #ff4d4d;
+    /* Red color for errors */
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table-container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 4px 8px;
+    }
+}

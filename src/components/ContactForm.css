@@ -1,0 +1,111 @@
+.contact-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.contact-container .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: FontAwesome, Arial, sans-serif;
+    box-sizing: border-box;
+    padding-left: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.contact-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    color: #aaa;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    background-color: #fff;
+}
+
+.contact-container .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.contact-container .submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    /* Gradient */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.contact-container .submit-button:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+}
+
+.contact-container-body {
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+}
+
+
+@media (max-width: 500px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h2 {
+        font-size: 22px;
+    }
+
+    .contact-container .submit-button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
